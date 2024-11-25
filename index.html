@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcards de Segurança da Informação</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Segurança da Informação</h1>
+        <p class="subtitle">Aprenda sobre ameaças e ataques cibernéticos</p>
+      </header>
+
+      <div class="flashcard">
+        <div class="card" onclick="flipCard()">
+          <div class="front">
+            <div>
+              <div class="icon">🔒</div>
+              <p>Clique para ver o conceito!</p>
+            </div>
+          </div>
+          <div class="back"></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button onclick="previousCard()" class="control-btn">
+          <i class="fas fa-chevron-left"></i> Anterior
+        </button>
+        <button onclick="shuffleCards()" class="shuffle-btn">
+          <i class="fas fa-random"></i> Embaralhar
+        </button>
+        <button onclick="nextCard()" class="control-btn">
+          Próximo <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="progress-container">
+        <div class="progress"></div>
+        <div class="stats">
+          <span class="viewed">Vistos: 0</span>
+          <span class="remaining">Restantes: 0</span>
+        </div>
+      </div>
+
+      <footer>
+        <p>Dica: Clique no cartão para virar</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
